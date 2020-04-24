@@ -1,0 +1,7 @@
+{
+  "name": "Health19",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
