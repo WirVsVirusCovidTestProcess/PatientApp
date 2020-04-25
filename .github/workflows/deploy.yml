@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  GITHUB_PAGES_URL: 'https://wirvsviruscovidtestprocess.github.io/PatientApp/'
+
 jobs:
   build-and-deploy:
     name: Deploy App for ${{ matrix.dest }}
@@ -41,7 +44,7 @@ jobs:
           cordova-version: 9
       - name: Build Web
         if: matrix.dest == 'web'
-        run: npm run build -- --prod
+        run: npm run build -- --base-href ${{ env.GITHUB_PAGES_URL }} --prod
       - name: Build App
         if: matrix.dest != 'web'
         run: ionic cordova build ${{ matrix.dest }} --prod
