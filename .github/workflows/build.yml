@@ -34,7 +34,7 @@ jobs:
       - name: Cache node modules
         uses: actions/cache@v1
         env:
-          cache-name: cache-node-modules
+          cache-name: cache-npm
         with:
           path: ~/.npm
           key: ${{ matrix.dest }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
