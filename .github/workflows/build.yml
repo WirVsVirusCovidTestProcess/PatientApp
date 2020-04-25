@@ -18,12 +18,6 @@ jobs:
           - dest: 'web'
             os: 'ubuntu-latest'
             output_path: 'www/'
-          - dest: 'android'
-            os: 'ubuntu-latest'
-            output_path: 'platforms/android/app/build/outputs/apk/debug/app-debug.apk'
-          - dest: 'ios'
-            os: 'macos-latest'
-            output_path: 'platforms/ios/build/emulator/MyApp.app'
 
     steps:
       - uses: actions/checkout@v1
@@ -51,9 +45,6 @@ jobs:
       - name: Build Web
         if: matrix.dest == 'web'
         run: npm run build -- --prod
-      - name: Build App
-        if: matrix.dest != 'web'
-        run: ionic cordova build ${{ matrix.dest }} --prod
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:

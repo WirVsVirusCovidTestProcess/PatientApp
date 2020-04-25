@@ -15,8 +15,7 @@ This application was created in the context of the WirVsVirus Hackathon and the 
 - [Contributing](#contributing)
 - [Deploying](#deploying)
   - [Progressive Web App](#progressive-web-app)
-  - [Android](#android)
-  - [iOS](#ios)
+  - [Native Apps](#native-apps)
 
 
 ## Getting Started
@@ -39,15 +38,9 @@ See [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/ma
 
 ### Progressive Web App
 
-1. Run `npm run ionic:build --prod`
+1. Run `npm run build -- --prod`
 2. Push the `www` folder to your hosting service
 
-### Android
+### Native Apps
 
-1. Run `ionic cordova run android --prod`
-
-### iOS
-
-Apple Device is required
-
-1. Run `ionic cordova run ios --prod`
+For native Apps [Capacitor](https://capacitor.ionicframework.com) is used. Therefore the default tooling for the apps needs to be used for deployment.

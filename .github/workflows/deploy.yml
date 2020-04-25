@@ -45,9 +45,6 @@ jobs:
       - name: Build Web
         if: matrix.dest == 'web'
         run: npm run build -- --base-href ${{ env.GITHUB_PAGES_URL }} --prod
-      - name: Build App
-        if: matrix.dest != 'web'
-        run: ionic cordova build ${{ matrix.dest }} --prod
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
