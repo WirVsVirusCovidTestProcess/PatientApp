@@ -1,4 +1,4 @@
-name: Build
+name: Deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build App for ${{ matrix.dest }}
+    name: Deploy App for ${{ matrix.dest }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
