@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  build-and-deploy:
     name: Deploy App for ${{ matrix.dest }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -53,7 +53,7 @@ jobs:
       - name: Deploy Web
         if: matrix.dest == 'web'
         uses: JamesIves/github-pages-deploy-action@releases/v3
-          with:
-            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-            BRANCH: gh-pages
-            FOLDER: ${{ matrix.output_path }}
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: ${{ matrix.output_path }}
