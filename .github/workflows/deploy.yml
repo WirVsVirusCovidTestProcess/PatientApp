@@ -1,0 +1,59 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build App for ${{ matrix.dest }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - dest: 'web'
+            os: 'ubuntu-latest'
+            output_path: 'www/'
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Cache node modules
+        uses: actions/cache@v1
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ matrix.dest }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ matrix.dest }}-build-${{ env.cache-name }}-
+            ${{ matrix.dest }}-build-
+            ${{ matrix.dest }}-
+      - name: Install Dependencies
+        run: npm ci
+      - name: Use coturiv/setup-ionic
+        uses: coturiv/setup-ionic@v1
+        with:
+          cordova-version: 9
+      - name: Build Web
+        if: matrix.dest == 'web'
+        run: npm run build -- --prod
+      - name: Build App
+        if: matrix.dest != 'web'
+        run: ionic cordova build ${{ matrix.dest }} --prod
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: ${{ matrix.dest }}
+          path: ${{ matrix.output_path }}
+      - name: Deploy Web
+        if: matrix.dest == 'web'
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+          with:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            BRANCH: gh-pages
+            FOLDER: ${{ matrix.output_path }}
