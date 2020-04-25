@@ -48,10 +48,6 @@ jobs:
             ${{ matrix.dest }}-
       - name: Install Dependencies
         run: npm ci
-      - name: Use coturiv/setup-ionic
-        uses: coturiv/setup-ionic@v1
-        with:
-          cordova-version: 8
       - name: Build Web
         if: matrix.dest == 'web'
         run: npm run build -- --prod
