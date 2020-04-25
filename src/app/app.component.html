@@ -5,6 +5,12 @@
         <ion-list id="menu-list">
           <ion-list-header>Health 19</ion-list-header>
         </ion-list>
+        <ion-list id="menu-footer">
+            <ion-item routerDirection="root" routerLink="/settings" lines="none" detail="false">
+              <ion-icon slot="start" name="settings"></ion-icon>
+              <ion-label>Settings</ion-label>
+            </ion-item>
+        </ion-list>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

@@ -6,6 +6,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'folder/Inbox',
     pathMatch: 'full'
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   }
 ];
 
