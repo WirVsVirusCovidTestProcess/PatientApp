@@ -50,7 +50,7 @@ jobs:
           cordova-version: 8
       - name: Fix Android Gradle plugin (See https://github.com/google/filament/issues/15#issuecomment-426259512)
         if: matrix.dest == 'android'
-        run: mkdir -p $ANDROID_HOME/ndk-bundle/toolchains/mips64el-linux-android/prebuilt/linux-x86_64
+        run: sudo mkdir -p $ANDROID_HOME/ndk-bundle/toolchains/mips64el-linux-android/prebuilt/linux-x86_64
       - name: Build Web
         if: matrix.dest == 'web'
         run: npm run build -- --prod
