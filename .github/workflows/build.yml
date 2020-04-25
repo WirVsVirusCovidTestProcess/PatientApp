@@ -31,8 +31,19 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
+      - name: Cache node modules
+        uses: actions/cache@v1
+        env:
+          cache-name: cache-npm
+        with:
+          path: node_modules
+          key: ${{ matrix.dest }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ matrix.dest }}-build-${{ env.cache-name }}-
+            ${{ matrix.dest }}-build-
+            ${{ matrix.dest }}-
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Use coturiv/setup-ionic
         uses: coturiv/setup-ionic@v1
         with:
