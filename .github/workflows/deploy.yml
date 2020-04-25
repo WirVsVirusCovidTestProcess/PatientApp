@@ -31,10 +31,10 @@ jobs:
           cache-name: cache-node-modules
         with:
           path: ~/.npm
-          key: ${{ matrix.dest }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ matrix.dest }}-deploy-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ matrix.dest }}-build-${{ env.cache-name }}-
-            ${{ matrix.dest }}-build-
+            ${{ matrix.dest }}-deploy-${{ env.cache-name }}-
+            ${{ matrix.dest }}-deploy-
             ${{ matrix.dest }}-
       - name: Install Dependencies
         run: npm ci
