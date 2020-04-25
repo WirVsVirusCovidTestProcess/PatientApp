@@ -1,8 +1,12 @@
 {
-  "name": "Health19",
+  "name": "health19",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Health 19 Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WirVsVirusCovidTestProcess/PatientApp"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -53,5 +57,5 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project"
+  "description": "Health 19 Patient App"
 }
