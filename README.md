@@ -8,6 +8,8 @@ This application was created in the context of the WirVsVirus Hackathon and the 
 
 ![](/src/assets/img/wirvsvirus_logo.png)
 
+![Lint and Test](https://github.com/WirVsVirusCovidTestProcess/PatientApp/workflows/Lint%20and%20Test/badge.svg?branch=master) ![Build application](https://github.com/WirVsVirusCovidTestProcess/PatientApp/workflows/Build%20application/badge.svg?branch=master)
+
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
