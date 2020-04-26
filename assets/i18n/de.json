@@ -28,18 +28,47 @@
   },
   "landingpage": {
     "title": "Health 19",
-    "text": "Dies ist die Landingpage"
+    "text": "Dies ist die Landingpage",
+    "start_questionnaire": "Fragebogen Starten"
   },
   "questionnaire": {
     "title": "Fragebogen",
-    "text": "Dies ist der Fragebogen"
+    "text": "Dies ist der Fragebogen",
+    "intro": {
+      "1": {
+        "title": "Fragebogen Hinweis 1",
+        "text": "Dies ist der erste wichtige Hinweis"
+      },
+      "2": {
+        "title": "Fragebogen Hinweis 2",
+        "text": "Dies ist der zweite wichtige Hinweis"
+      },
+      "start": {
+        "title": "Fragebogen Starten",
+        "text": "Starten Sie jetzt den Fragebogen"
+      },
+      "continue": "Weiter",
+      "start_questionnaire": "Fragebogen jetzt starten"
+    },
+    "questions": {
+      "continue": "Nächste Frage",
+      "complete": "Fragebogen abschließen"
+    }
   },
   "results": {
     "title": "Ergebnisse",
-    "text": "Hier werden die Ergebnisse des Fragebogens angezeigt"
+    "text": "Hier werden die Ergebnisse des Fragebogens angezeigt",
+    "text2": "Auch ob man zur Risikogruppe gehört oder nicht",
+    "text3": "Auch ein paar hilfreiche Telefonnummern",
+    "goto_signup": "Anmelden"
   },
   "account": {
     "title": "Account",
-    "text": "Hier wird die Account-Übersicht angezeigt"
+    "text": "Hier wird die Account-Übersicht angezeigt inklusive Test ergebnissen und anderem Zeug",
+    "signup": {
+      "title": "Registrierung",
+      "text": "Registrierungs-Formular kommt hierhin",
+      "button": "Registrieren"
+    }
   }
 }
