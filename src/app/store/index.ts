@@ -9,7 +9,8 @@ import { StorageSyncEffects } from 'ngrx-store-ionic-storage';
 import { EffectsModule } from '@ngrx/effects';
 import { NgModule } from '@angular/core';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import * as hydrated from './hydrated.reducer';
+import * as hydrated from './hydrated';
+import * as Settings from './settings/settings.module';
 
 
 export interface State {
@@ -21,7 +22,7 @@ export const reducers: ActionReducerMap<State> = {
 };
 
 export const storageSyncReducer = storageSync({
-  keys: [],
+  keys: [Settings.featureKey],
   onSyncError: (err) => console.error(err)
 });
 
@@ -44,8 +45,9 @@ export const metaReducers: MetaReducer<State>[] = !environment.production ? [sto
     EffectsModule.forRoot([StorageSyncEffects]),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
-      logOnly: environment.production, // Restrict extension to log-only mode
+      logOnly: environment.production // Restrict extension to log-only mode
     }),
+    Settings.SettingsStateModule
   ]
 })
 export class RootStoreModule {
