@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   initializeApp() {
+    this.settingsService.setUpEventListeners();
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();

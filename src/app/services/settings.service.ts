@@ -15,10 +15,9 @@ export class SettingsService {
   constructor(
     private store: Store<AppState>
   ) {
-    this.setUpEventListeners();
   }
 
-  private setUpEventListeners(): void {
+  public setUpEventListeners(): void {
     if (this.hydrated) {
       return;
     }
