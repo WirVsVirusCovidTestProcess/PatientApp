@@ -1,0 +1,25 @@
+{
+  "menu": {
+    "title": "Health 19",
+    "settings": "Einstellungen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "dark_mode": "Dunkles Erscheinungsbild",
+    "language": "Sprache",
+    "languages": {
+      "de": "Deutsch",
+      "en": "English"
+    },
+    "ok": "OK",
+    "cancel": "Abbrechen",
+    "delete_data": "Daten löschen",
+    "delete_all_data": "Alle Daten löschen",
+    "delete_data_confirmation": {
+      "title": "Daten löschen?",
+      "text": "Sind Sie sicher, dass Sie alle Ihre Daten löschen wollen?",
+      "cancel": "Abbrechen",
+      "confirm": "Daten löschen"
+    }
+  }
+}
