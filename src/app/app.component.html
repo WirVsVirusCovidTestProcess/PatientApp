@@ -5,7 +5,7 @@
                 <ion-list id="menu-title">
                     <ion-list-header>
                         <ion-thumbnail class="ion-margin-end">
-                            <ion-img src="/assets/icon/favicon.png"></ion-img>
+                            <ion-img src="assets/icon/favicon.png"></ion-img>
                         </ion-thumbnail>
                         {{ "menu.title" | translate }}
                     </ion-list-header>
@@ -13,11 +13,7 @@
                 <ion-list id="menu-links">
                     <ion-item routerDirection="root" routerLink="/" lines="none" detail="false">
                         <ion-icon slot="start" name="home"></ion-icon>
-                        <ion-label>Test</ion-label>
-                    </ion-item>
-                    <ion-item routerDirection="root" routerLink="/" lines="none" detail="false">
-                        <ion-icon slot="start" name="home"></ion-icon>
-                        <ion-label>Test</ion-label>
+                        <ion-label>{{ "menu.home" | translate }}</ion-label>
                     </ion-item>
                 </ion-list>
             </ion-content>

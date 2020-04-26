@@ -1,6 +1,7 @@
 {
   "menu": {
     "title": "Health 19",
+    "home": "Home",
     "settings": "Settings"
   },
   "settings": {
@@ -21,5 +22,9 @@
       "cancel": "Cancel",
       "confirm": "Delete Data"
     }
+  },
+  "landingpage": {
+    "title": "Health 19",
+    "text": "This is the landing page"
   }
 }
