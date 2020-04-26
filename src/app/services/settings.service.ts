@@ -23,7 +23,8 @@ export class SettingsService {
       return;
     }
 
-    window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => this.handleSystemColorSchemePreferenceChange(e));
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => this.handleSystemColorSchemePreferenceChange(e));
+
     this.hydrated = this.store.select(Hydrated.selectHydrated).pipe(filter(val => !!val));
     this.hydrated.subscribe(() => {
       this.getDarkMode().pipe(first()).subscribe((val) => {
