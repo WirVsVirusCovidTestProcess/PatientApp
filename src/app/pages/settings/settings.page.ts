@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { SettingsService } from '../services/settings.service';
+import { SettingsService } from '../../services/settings.service';
 import { Observable, combineLatest } from 'rxjs';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
-import { availableLanguages, Language } from '../types/languages';
+import { availableLanguages, Language } from '../../types/languages';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
