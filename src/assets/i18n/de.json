@@ -3,6 +3,7 @@
     "title": "Health 19",
     "home": "Home",
     "questionnaire": "Fragebogen",
+    "results": "Ergebnisse",
     "settings": "Einstellungen"
   },
   "settings": {
@@ -31,5 +32,9 @@
   "questionnaire": {
     "title": "Fragebogen",
     "text": "Dies ist der Fragebogen"
+  },
+  "results": {
+    "title": "Ergebnisse",
+    "text": "Hier werden die Ergebnisse des Fragebogens angezeigt"
   }
 }

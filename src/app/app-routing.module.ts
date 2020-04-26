@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'questionnaire',
     loadChildren: () => import('./pages/questionnaire/questionnaire.module').then( m => m.QuestionnairePageModule)
+  },
+  {
+    path: 'results',
+    loadChildren: () => import('./pages/results/results.module').then( m => m.ResultsPageModule)
   }
 ];
 

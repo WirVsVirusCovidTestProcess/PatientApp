@@ -3,6 +3,7 @@
     "title": "Health 19",
     "home": "Home",
     "questionnaire": "Questionnaire",
+    "results": "Results",
     "settings": "Settings"
   },
   "settings": {
@@ -31,5 +32,9 @@
   "questionnaire": {
     "title": "Questionnaire",
     "text": "Here comes the questionnaire"
+  },
+  "results": {
+    "title": "Results",
+    "text": "The results from the questionnaire are displayed here"
   }
 }
