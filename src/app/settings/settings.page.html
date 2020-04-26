@@ -29,5 +29,13 @@
         <ion-select-option>English</ion-select-option>
       </ion-select>
     </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="trash-outline"></ion-icon>
+      <ion-label>Delete Data</ion-label>
+      <ion-button (click)="clearData()" fill="outline" color="danger" slot="end">
+        Delete All Data
+      </ion-button>
+    </ion-item>
   </ion-list>
 </ion-content>
