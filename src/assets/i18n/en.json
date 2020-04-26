@@ -60,10 +60,15 @@
     "text": "The results from the questionnaire are displayed here",
     "text2": "Whether the patient belongs to a risk group or not",
     "text3": "phone numbers would be helpful too",
-    "goto_signup": "Signup"
+    "goto_signup": "Sign up"
   },
   "account": {
     "title": "Account",
-    "text": "The Account overview is displayed here"
+    "text": "The Account overview is displayed here, including test results and other stuff",
+    "signup": {
+      "title": "Sign up",
+      "text": "The Sign up form belongs on this page",
+      "button": "Sign up"
+    }
   }
 }

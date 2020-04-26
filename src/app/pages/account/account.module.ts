@@ -6,6 +6,7 @@ import { AccountPageRoutingModule } from './account-routing.module';
 
 import { AccountPage } from './account.page';
 import { SharedModule } from '../../shared.module';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { SharedModule } from '../../shared.module';
     IonicModule,
     AccountPageRoutingModule
   ],
-  declarations: [AccountPage]
+  declarations: [AccountPage, SignupComponent]
 })
 export class AccountPageModule {}

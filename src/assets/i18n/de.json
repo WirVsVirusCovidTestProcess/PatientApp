@@ -64,6 +64,11 @@
   },
   "account": {
     "title": "Account",
-    "text": "Hier wird die Account-Übersicht angezeigt"
+    "text": "Hier wird die Account-Übersicht angezeigt inklusive Test ergebnissen und anderem Zeug",
+    "signup": {
+      "title": "Registrierung",
+      "text": "Registrierungs-Formular kommt hierhin",
+      "button": "Registrieren"
+    }
   }
 }
