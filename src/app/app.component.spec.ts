@@ -8,15 +8,17 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { AppComponent } from './app.component';
 import { SettingsService } from './services/settings.service';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 describe('AppComponent', () => {
 
-  let statusBarSpy, splashScreenSpy, platformReadySpy, platformSpy, settingsServiceSpy;
+  let statusBarSpy, splashScreenSpy, platformReadySpy, platformSpy, settingsServiceSpy, translateServiceSpy;
 
   beforeEach(async(() => {
     statusBarSpy = jasmine.createSpyObj('StatusBar', ['styleDefault']);
     splashScreenSpy = jasmine.createSpyObj('SplashScreen', ['hide']);
     settingsServiceSpy = jasmine.createSpyObj('SettingsService', ['setUpEventListeners']);
+    translateServiceSpy = jasmine.createSpyObj('TranslateService', ['get']);
     platformReadySpy = Promise.resolve();
     platformSpy = jasmine.createSpyObj('Platform', { ready: platformReadySpy });
 
@@ -27,9 +29,10 @@ describe('AppComponent', () => {
         { provide: StatusBar, useValue: statusBarSpy },
         { provide: SplashScreen, useValue: splashScreenSpy },
         { provide: Platform, useValue: platformSpy },
-        { provide: SettingsService, useValue: settingsServiceSpy }
+        { provide: SettingsService, useValue: settingsServiceSpy },
+        { provide: TranslateService, useValue: translateServiceSpy }
       ],
-      imports: [RouterTestingModule.withRoutes([])]
+      imports: [RouterTestingModule.withRoutes([]), TranslateModule.forRoot()]
     }).compileComponents();
   }));
 
