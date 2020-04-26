@@ -1,6 +1,10 @@
 {
   "menu": {
     "title": "Health 19",
+    "home": "Home",
+    "questionnaire": "Fragebogen",
+    "results": "Ergebnisse",
+    "account": "Account",
     "settings": "Einstellungen"
   },
   "settings": {
@@ -21,5 +25,21 @@
       "cancel": "Abbrechen",
       "confirm": "Daten löschen"
     }
+  },
+  "landingpage": {
+    "title": "Health 19",
+    "text": "Dies ist die Landingpage"
+  },
+  "questionnaire": {
+    "title": "Fragebogen",
+    "text": "Dies ist der Fragebogen"
+  },
+  "results": {
+    "title": "Ergebnisse",
+    "text": "Hier werden die Ergebnisse des Fragebogens angezeigt"
+  },
+  "account": {
+    "title": "Account",
+    "text": "Hier wird die Account-Übersicht angezeigt"
   }
 }

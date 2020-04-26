@@ -1,6 +1,10 @@
 {
   "menu": {
     "title": "Health 19",
+    "home": "Home",
+    "questionnaire": "Questionnaire",
+    "results": "Results",
+    "account": "Account",
     "settings": "Settings"
   },
   "settings": {
@@ -21,5 +25,21 @@
       "cancel": "Cancel",
       "confirm": "Delete Data"
     }
+  },
+  "landingpage": {
+    "title": "Health 19",
+    "text": "This is the landing page"
+  },
+  "questionnaire": {
+    "title": "Questionnaire",
+    "text": "Here comes the questionnaire"
+  },
+  "results": {
+    "title": "Results",
+    "text": "The results from the questionnaire are displayed here"
+  },
+  "account": {
+    "title": "Account",
+    "text": "The Account overview is displayed here"
   }
 }
