@@ -34,6 +34,8 @@
     "@ngrx/effects": "^9.1.0",
     "@ngrx/store": "^9.1.0",
     "@ngrx/store-devtools": "^9.1.0",
+    "@ngx-translate/core": "^12.1.2",
+    "@ngx-translate/http-loader": "^4.0.0",
     "cordova-sqlite-storage": "^5.0.0",
     "core-js": "^2.5.4",
     "ngrx-store-ionic-storage": "^5.0.0",

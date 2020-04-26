@@ -3,12 +3,12 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="menu-list">
-          <ion-list-header>Health 19</ion-list-header>
+          <ion-list-header>{{ "menu.title" | translate }}</ion-list-header>
         </ion-list>
         <ion-list id="menu-footer">
             <ion-item routerDirection="root" routerLink="/settings" lines="none" detail="false">
               <ion-icon slot="start" name="settings"></ion-icon>
-              <ion-label>Settings</ion-label>
+              <ion-label>{{ "menu.settings" | translate }}</ion-label>
             </ion-item>
         </ion-list>
       </ion-content>

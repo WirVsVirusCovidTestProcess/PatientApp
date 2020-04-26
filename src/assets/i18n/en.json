@@ -1,0 +1,25 @@
+{
+  "menu": {
+    "title": "Health 19",
+    "settings": "Settings"
+  },
+  "settings": {
+    "title": "Settings",
+    "dark_mode": "Dark Theme",
+    "language": "Language",
+    "languages": {
+      "de": "Deutsch",
+      "en": "English"
+    },
+    "ok": "OK",
+    "cancel": "Cancel",
+    "delete_data": "Delete Data",
+    "delete_all_data": "Delete All Data",
+    "delete_data_confirmation": {
+      "title": "Delete Data?",
+      "text": "Are you sure you want to delete all your data?",
+      "cancel": "Cancel",
+      "confirm": "Delete Data"
+    }
+  }
+}
