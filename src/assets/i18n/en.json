@@ -56,7 +56,10 @@
   },
   "results": {
     "title": "Results",
-    "text": "The results from the questionnaire are displayed here"
+    "text": "The results from the questionnaire are displayed here",
+    "text2": "Whether the patient belongs to a risk group or not",
+    "text3": "phone numbers would be helpful too",
+    "goto_signup": "Signup"
   },
   "account": {
     "title": "Account",

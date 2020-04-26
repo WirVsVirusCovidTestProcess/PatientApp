@@ -18,7 +18,14 @@
     <ion-grid>
       <ion-row>
         <ion-col class="ion-text-center">
-          <ion-text>{{ "results.text" | translate }}</ion-text>
+          <p>{{ "results.text" | translate }}</p>
+          <p>{{ "results.text2" | translate }}</p>
+          <p>{{ "results.text3" | translate }}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-button size="large" (click)="this.redirectToSignup()">{{ "results.goto_signup" | translate }}</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>

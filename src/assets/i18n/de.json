@@ -56,7 +56,10 @@
   },
   "results": {
     "title": "Ergebnisse",
-    "text": "Hier werden die Ergebnisse des Fragebogens angezeigt"
+    "text": "Hier werden die Ergebnisse des Fragebogens angezeigt",
+    "text2": "Auch ob man zur Risikogruppe gehört oder nicht",
+    "text3": "Auch ein paar hilfreiche Telefonnummern",
+    "goto_signup": "Anmelden"
   },
   "account": {
     "title": "Account",
