@@ -4,6 +4,7 @@
     "home": "Home",
     "questionnaire": "Questionnaire",
     "results": "Results",
+    "account": "Account",
     "settings": "Settings"
   },
   "settings": {
@@ -36,5 +37,9 @@
   "results": {
     "title": "Results",
     "text": "The results from the questionnaire are displayed here"
+  },
+  "account": {
+    "title": "Account",
+    "text": "The Account overview is displayed here"
   }
 }
