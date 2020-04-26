@@ -28,7 +28,8 @@
   },
   "landingpage": {
     "title": "Health 19",
-    "text": "Dies ist die Landingpage"
+    "text": "Dies ist die Landingpage",
+    "start_questionnaire": "Fragebogen Starten"
   },
   "questionnaire": {
     "title": "Fragebogen",
