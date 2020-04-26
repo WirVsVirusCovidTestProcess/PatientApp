@@ -30,7 +30,8 @@ export class SettingsService {
     }
     this.translateService.setDefaultLang(availableLanguages[0]);
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => this.handleSystemColorSchemePreferenceChange(e));
+    // tslint:disable-next-line
+    window.matchMedia('(prefers-color-scheme: dark)').addListener( (e) => this.handleSystemColorSchemePreferenceChange(e));
 
     this.hydrated = this.store.select(Hydrated.selectHydrated).pipe(filter(val => !!val), first());
     this.hydrated.subscribe(() => {
