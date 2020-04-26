@@ -3,7 +3,7 @@ import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-intro',
+  selector: 'app-questionnaire-intro',
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss'],
 })

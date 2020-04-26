@@ -48,6 +48,10 @@
       },
       "continue": "Continue",
       "start_questionnaire": "Start Questionnaire now"
+    },
+    "questions": {
+      "continue": "Next Question",
+      "complete": "Complete Questionnaire"
     }
   },
   "results": {

@@ -6,6 +6,7 @@ import { QuestionnairePageRoutingModule } from './questionnaire-routing.module';
 
 import { SharedModule } from '../../shared.module';
 import { IntroComponent } from './intro/intro.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { IntroComponent } from './intro/intro.component';
     IonicModule,
     QuestionnairePageRoutingModule
   ],
-  declarations: [IntroComponent]
+  declarations: [IntroComponent, QuestionsComponent]
 })
 export class QuestionnairePageModule {}

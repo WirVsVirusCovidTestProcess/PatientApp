@@ -48,6 +48,10 @@
       },
       "continue": "Weiter",
       "start_questionnaire": "Fragebogen jetzt starten"
+    },
+    "questions": {
+      "continue": "Nächste Frage",
+      "complete": "Fragebogen abschließen"
     }
   },
   "results": {
