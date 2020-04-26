@@ -2,6 +2,7 @@
   "menu": {
     "title": "Health 19",
     "home": "Home",
+    "questionnaire": "Questionnaire",
     "settings": "Settings"
   },
   "settings": {
@@ -26,5 +27,9 @@
   "landingpage": {
     "title": "Health 19",
     "text": "This is the landing page"
+  },
+  "questionnaire": {
+    "title": "Questionnaire",
+    "text": "Here comes the questionnaire"
   }
 }

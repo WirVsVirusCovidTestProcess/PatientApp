@@ -2,6 +2,7 @@
   "menu": {
     "title": "Health 19",
     "home": "Home",
+    "questionnaire": "Fragebogen",
     "settings": "Einstellungen"
   },
   "settings": {
@@ -26,5 +27,9 @@
   "landingpage": {
     "title": "Health 19",
     "text": "Dies ist die Landingpage"
+  },
+  "questionnaire": {
+    "title": "Fragebogen",
+    "text": "Dies ist der Fragebogen"
   }
 }

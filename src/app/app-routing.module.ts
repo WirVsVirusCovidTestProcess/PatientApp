@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'settings',
     loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsPageModule)
+  },
+  {
+    path: 'questionnaire',
+    loadChildren: () => import('./pages/questionnaire/questionnaire.module').then( m => m.QuestionnairePageModule)
   }
 ];
 
