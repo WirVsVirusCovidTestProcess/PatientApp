@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>{{ "questionnaire.title" | translate }}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-slides #slides>
+        <ion-slide>
+            <div>
+                <h2>{{ "questionnaire.intro.1.title" | translate }}</h2>
+                <p>{{ "questionnaire.intro.1.text" | translate }}</p>
+                <ion-button fill="clear" (click)="this.nextSlide()">{{ "questionnaire.intro.continue" | translate }}
+                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                </ion-button>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div>
+                <h2>{{ "questionnaire.intro.2.title" | translate }}</h2>
+                <p>{{ "questionnaire.intro.2.text" | translate }}</p>
+                <ion-button fill="clear" (click)="this.nextSlide()">{{ "questionnaire.intro.continue" | translate }}
+                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                </ion-button>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div>
+                <h2>{{ "questionnaire.intro.start.title" | translate }}</h2>
+                <p>{{ "questionnaire.intro.start.text" | translate }}</p>
+                <ion-button fill="outline" size="large" (click)="this.startQuestionnaire()">
+                    {{ "questionnaire.intro.start_questionnaire" | translate }}
+                </ion-button>
+            </div>
+        </ion-slide>
+
+    </ion-slides>
+</ion-content>

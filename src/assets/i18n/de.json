@@ -32,7 +32,23 @@
   },
   "questionnaire": {
     "title": "Fragebogen",
-    "text": "Dies ist der Fragebogen"
+    "text": "Dies ist der Fragebogen",
+    "intro": {
+      "1": {
+        "title": "Fragebogen Hinweis 1",
+        "text": "Dies ist der erste wichtige Hinweis"
+      },
+      "2": {
+        "title": "Fragebogen Hinweis 2",
+        "text": "Dies ist der zweite wichtige Hinweis"
+      },
+      "start": {
+        "title": "Fragebogen Starten",
+        "text": "Starten Sie jetzt den Fragebogen"
+      },
+      "continue": "Weiter",
+      "start_questionnaire": "Fragebogen jetzt starten"
+    }
   },
   "results": {
     "title": "Ergebnisse",

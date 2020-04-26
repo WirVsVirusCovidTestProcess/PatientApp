@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { QuestionnairePage } from './questionnaire.page';
+import { IntroComponent } from './intro/intro.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: QuestionnairePage
+    redirectTo: 'intro',
+    pathMatch: 'full'
+  }, {
+    path: 'intro',
+    component: IntroComponent
   }
 ];
 

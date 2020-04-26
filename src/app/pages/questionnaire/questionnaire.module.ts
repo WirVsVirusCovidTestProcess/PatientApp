@@ -4,8 +4,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { QuestionnairePageRoutingModule } from './questionnaire-routing.module';
 
-import { QuestionnairePage } from './questionnaire.page';
 import { SharedModule } from '../../shared.module';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   imports: [
@@ -13,6 +13,6 @@ import { SharedModule } from '../../shared.module';
     IonicModule,
     QuestionnairePageRoutingModule
   ],
-  declarations: [QuestionnairePage]
+  declarations: [IntroComponent]
 })
 export class QuestionnairePageModule {}

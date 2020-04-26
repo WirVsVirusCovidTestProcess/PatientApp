@@ -32,7 +32,23 @@
   },
   "questionnaire": {
     "title": "Questionnaire",
-    "text": "Here comes the questionnaire"
+    "text": "Here comes the questionnaire",
+    "intro": {
+      "1": {
+        "title": "Questionnaire Hint 1",
+        "text": "This is the first important hint"
+      },
+      "2": {
+        "title": "Questionnaire Hint 2",
+        "text": "This is the second important hint"
+      },
+      "start": {
+        "title": "Start Questionnaire",
+        "text": "You can start the Questionnaire now"
+      },
+      "continue": "Continue",
+      "start_questionnaire": "Start Questionnaire now"
+    }
   },
   "results": {
     "title": "Results",
