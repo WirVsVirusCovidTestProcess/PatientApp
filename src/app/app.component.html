@@ -1,18 +1,23 @@
 <ion-app>
-  <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
-        <ion-list id="menu-list">
-          <ion-list-header>{{ "menu.title" | translate }}</ion-list-header>
-        </ion-list>
-        <ion-list id="menu-footer">
-            <ion-item routerDirection="root" routerLink="/settings" lines="none" detail="false">
-              <ion-icon slot="start" name="settings"></ion-icon>
-              <ion-label>{{ "menu.settings" | translate }}</ion-label>
-            </ion-item>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
-    <ion-router-outlet id="main-content"></ion-router-outlet>
-  </ion-split-pane>
+    <ion-split-pane contentId="main-content">
+        <ion-menu contentId="main-content" type="overlay">
+            <ion-content>
+                <ion-list id="menu-list">
+                    <ion-list-header>
+                        <ion-thumbnail class="ion-margin-end">
+                            <ion-img src="/assets/icon/favicon.png"></ion-img>
+                        </ion-thumbnail>
+                        {{ "menu.title" | translate }}
+                    </ion-list-header>
+                </ion-list>
+                <ion-list id="menu-footer">
+                    <ion-item routerDirection="root" routerLink="/settings" lines="none" detail="false">
+                        <ion-icon slot="start" name="settings"></ion-icon>
+                        <ion-label>{{ "menu.settings" | translate }}</ion-label>
+                    </ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+        <ion-router-outlet id="main-content"></ion-router-outlet>
+    </ion-split-pane>
 </ion-app>
