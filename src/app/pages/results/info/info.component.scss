@@ -1,0 +1,27 @@
+.image, .skeleton-image {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+
+.info-row {
+  align-items: center;
+  margin-bottom: 50px;
+  .image-column, .text-column {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-column {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.centered-skeleton-text {
+  margin: 0 auto;
+}
+
+.skeleton-image {
+  height: 300px;
+}

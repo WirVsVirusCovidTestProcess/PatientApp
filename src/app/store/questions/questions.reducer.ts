@@ -27,7 +27,8 @@ const questionsReducer = createReducer(initialState,
       ...state,
       riskGroup
     };
-  })
+  }),
+  on(QuestionsActions.clearState, () => initialState)
 );
 
 export function reducer(state: State | undefined, action: Action) {

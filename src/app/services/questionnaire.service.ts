@@ -27,4 +27,8 @@ export class QuestionnaireService {
   public getRiskGroup(): Observable<RiskGroup | undefined> {
     return this.store.select(QuestionsSelectors.selectRiskGroup);
   }
+
+  public clearData(): void {
+    this.store.dispatch(QuestionsActions.clearState());
+  }
 }

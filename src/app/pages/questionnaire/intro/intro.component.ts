@@ -19,7 +19,6 @@ export class IntroComponent implements OnInit {
   }
 
   startQuestionnaire(): void {
-    console.log('Start Questionnaire');
     this.router.navigateByUrl('/questionnaire/questions');
   }
 }

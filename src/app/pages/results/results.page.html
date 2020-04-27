@@ -15,20 +15,11 @@
   </ion-header>
 
   <ion-content class="ion-padding">
-    <ion-grid>
-      <ion-row>
-        <ion-col class="ion-text-center">
-          <p>{{ "results.text" | translate }}</p>
-          <p>{{ "results.text2" | translate }}</p>
-          <p><b>Risk Group: {{ this.getRiskGroup() | async }}</b></p>
-          <p>{{ "results.text3" | translate }}</p>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="ion-text-center">
-          <ion-button size="large" (click)="this.redirectToSignup()">{{ "results.goto_signup" | translate }}</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <div [ngSwitch]="this.riskGroup | async">
+      <app-results-low-risk-group *ngSwitchCase="'low'"></app-results-low-risk-group>
+      <app-results-medium-risk-group *ngSwitchCase="'medium'"></app-results-medium-risk-group>
+      <app-results-high-risk-group *ngSwitchCase="'high'"></app-results-high-risk-group>
+      <app-results-loading-risk-group *ngSwitchDefault></app-results-loading-risk-group>
+    </div>
   </ion-content>
 </ion-content>

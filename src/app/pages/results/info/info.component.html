@@ -1,0 +1,48 @@
+<ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-md="10" size-lg="6">
+        <ion-grid>
+            <ion-row class="ion-margin-bottom">
+                <ion-col class="ion-text-center ion-margin-bottom">
+                    <h2 *ngIf="!this.loading">{{ "results.info.recommendations" | translate }}</h2>
+                    <h2 *ngIf="this.loading">
+                        <ion-skeleton-text animated style="width: 50%"
+                                           class="centered-skeleton-text"></ion-skeleton-text>
+                    </h2>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="info-row" *ngFor="let info of this.infoParts; let i = index">
+                <ion-col size="12" size-md="4" [pushMd]="i % 2 == 0 ? 8 : undefined" class="image-column">
+                    <ion-thumbnail class="image">
+                        <ion-img *ngIf="!this.loading" [src]="info.imageUrl"></ion-img>
+                        <ion-skeleton-text *ngIf="this.loading" animated class="skeleton-image"></ion-skeleton-text>
+                    </ion-thumbnail>
+                </ion-col>
+                <ion-col size="12" size-md="8" [pullMd]="i % 2 == 0 ? 4 : undefined"
+                         class="text-column ion-text-center ion-text-md-start">
+                    <h3 *ngIf="!this.loading">{{ info.title | translate }}</h3>
+                    <h3 *ngIf="this.loading">
+                        <ion-skeleton-text animated style="width: 250px"></ion-skeleton-text>
+                    </h3>
+                    <div *ngIf="!this.loading">
+                        <p *ngFor="let text of info.texts">{{ text | translate }}</p>
+                    </div>
+                    <div *ngIf="this.loading" style="width: 350px">
+                        <p>
+                            <ion-skeleton-text animated></ion-skeleton-text>
+                        </p>
+                        <p>
+                            <ion-skeleton-text animated></ion-skeleton-text>
+                        </p>
+                        <p>
+                            <ion-skeleton-text animated></ion-skeleton-text>
+                        </p>
+                    </div>
+                    <ion-button *ngIf="!this.loading && info.button" color="medium" fill="outline"
+                                (click)="info.button.handler()">{{ info.button.text | translate }}</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-col>
+</ion-row>
+

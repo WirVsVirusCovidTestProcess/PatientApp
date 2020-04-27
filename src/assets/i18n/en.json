@@ -56,10 +56,46 @@
     }
   },
   "results": {
-    "title": "Results",
-    "text": "The results from the questionnaire are displayed here",
-    "text2": "Whether the patient belongs to a risk group or not",
-    "text3": "phone numbers would be helpful too",
+    "title": "Result",
+    "medium": {
+      "title": "Medium Risk",
+      "text": "You have a medium risk to be infected with Corona"
+    },
+    "low": {
+      "title": "Low Risk",
+      "text": "You have a low risk to be infected with Corona"
+    },
+    "high": {
+      "title": "High Risk",
+      "text": "You have a high risk to be infected with Corona"
+    },
+    "info": {
+      "recommendations": "Recommendations",
+      "1": {
+        "title": "Hand hygiene",
+        "text1": "Pay attention to your hand hygiene",
+        "text2": "Wash your hands often and thoroughly"
+      },
+      "2": {
+        "title": "Stay at home",
+        "text1": "Stay at home as possible and avoid other people"
+      },
+      "3": {
+        "title": "Social Distancing",
+        "text1": "Should you leave the house, please keep a distance of 1,5m to other people",
+        "text2": "The usage of a mask is appropriate, especially if the minimum distance can not be adhered to"
+      },
+      "4": {
+        "title": "Call when in doubt",
+        "text1": "Should you have doubts or questions please contact your doctor",
+        "text2": "You can also call your local health office"
+      },
+      "restart": {
+        "title": "Complete Questionnaire again",
+        "text1": "Should you experience more symptoms in the next days you can always restart the questionnaire",
+        "button": "Restart Questionnaire"
+      }
+    },
     "goto_signup": "Sign up"
   },
   "account": {

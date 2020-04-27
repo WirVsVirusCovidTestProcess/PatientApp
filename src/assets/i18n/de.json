@@ -56,10 +56,46 @@
     }
   },
   "results": {
-    "title": "Ergebnisse",
-    "text": "Hier werden die Ergebnisse des Fragebogens angezeigt",
-    "text2": "Auch ob man zur Risikogruppe gehört oder nicht",
-    "text3": "Auch ein paar hilfreiche Telefonnummern",
+    "title": "Ergebnis",
+    "medium": {
+      "title": "Mittleres Risiko",
+      "text": "Sie haben ein mittleres Risiko sich mit Corona infiziert zu haben."
+    },
+    "low": {
+      "title": "Niedriges Risiko",
+      "text": "Sie haben ein niedriges Risiko sich mit Corona infiziert zu haben."
+    },
+    "high": {
+      "title": "Hohes Risiko",
+      "text": "Sie haben ein hohes Risiko sich mit Corona infiziert zu haben."
+    },
+    "info": {
+      "recommendations": "Handlungsempfehlungen",
+      "1": {
+        "title": "Handhygiene",
+        "text1": "Achten Sie vermehrt auf Ihre Handhygiene",
+        "text2": "Waschen Sie daher Ihre Hände oft und gründlich"
+      },
+      "2": {
+        "title": "Bleiben Sie zu Hause",
+        "text1": "Bleiben Sie soweit möglich zu Hause und meiden Sie andere Menschen"
+      },
+      "3": {
+        "title": "Soziale Distanzierung",
+        "text1": "Sollten Sie das Haus verlassen, so halten Sie 1,5m Abstand zu Ihren Mitmenschen",
+        "text2": "Das Tragen eines Mundschutzes ist angebracht, besonders wenn der Mindestabstand nicht eingehalten werden kann"
+      },
+      "4": {
+        "title": "Im Zweifel Anrufen",
+        "text1": "Sollten Sie Zweifel oder Fragen haben so zögern Sie nicht Ihren Hausarzt anzurufen",
+        "text2": "Alternativ können Sie auch Ihr lokales Gesundheitsamt anrufen"
+      },
+      "restart": {
+        "title": "Fragebogen erneut ausfüllen",
+        "text1": "Sollten Sie in den nächsten Tagen Erkältungssymptome entwickeln, so können Sie jederzeit den Fragebogen erneut starten",
+        "button": "Fragebogen erneut starten"
+      }
+    },
     "goto_signup": "Anmelden"
   },
   "account": {

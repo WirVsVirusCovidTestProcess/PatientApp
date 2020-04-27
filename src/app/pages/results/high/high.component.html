@@ -1,0 +1,20 @@
+<ion-grid>
+  <ion-row class="ion-justify-content-center ion-margin-bottom">
+    <ion-col size="12" size-md="6" size-lg="4">
+      <ion-card color="danger">
+        <ion-card-header>
+          <ion-card-title>{{ "results.high.title" | translate }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{ "results.high.text" | translate }}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-margin-vertical ion-justify-content-center">
+    <ion-col size="12" size-md="6" size-lg="4" class="ion-justify-content-center" style="display: flex">
+      <ion-button (click)="this.redirectToSignup()" size="large">{{ "results.goto_signup" | translate }}</ion-button>
+    </ion-col>
+  </ion-row>
+  <app-results-info></app-results-info>
+</ion-grid>
