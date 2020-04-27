@@ -15,16 +15,28 @@
   </ion-header>
 
   <div class="ion-padding">
-    <ion-grid>
+    <ion-grid fixed>
       <ion-row class="ion-justify-content-center">
         <ion-col class="ion-text-center ion-justify-content-center centered-column">
           <ion-img class="image ion-margin-bottom" src="assets/img/illustrations/undraw_doctors_hwty.svg"></ion-img>
           <ion-text>{{ "landingpage.text" | translate }}</ion-text>
         </ion-col>
       </ion-row>
-      <ion-row>
+      <ion-row class="ion-margin-vertical">
         <ion-col class="ion-text-center">
           <ion-button size="large" (click)="this.startQuestionnaire()">{{ "landingpage.start_questionnaire" | translate }}</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-top">
+        <ion-col class="program-column">
+          <div>
+            <span>{{ "landingpage.a_project_of" | translate }}</span>
+            <ion-img src="assets/img/wirvsvirus_logo.png" alt="WirVsVirus Hackathon"></ion-img>
+          </div>
+          <div>
+            <span>{{ "landingpage.supported_by" | translate }}</span>
+            <ion-img src="assets/img/solution_enabler_logo.png" alt="WirVsVirus Solution Enabler"></ion-img>
+          </div>
         </ion-col>
       </ion-row>
     </ion-grid>

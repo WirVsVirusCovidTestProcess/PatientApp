@@ -9,3 +9,30 @@
   max-width: 100%;
   height: auto;
 }
+
+ion-button {
+  margin-top: 5vh;
+}
+
+
+.program-column {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15vh;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  ion-img {
+    width: 200px;
+    height: auto;
+    margin: 0 30px;
+  }
+}
