@@ -1,18 +1,21 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { QuestionnaireService } from '../../../services/questionnaire.service';
 
 @Component({
   selector: 'app-questionnaire-questions',
   templateUrl: './questions.component.html',
-  styleUrls: ['./questions.component.scss'],
+  styleUrls: ['./questions.component.scss']
 })
 export class QuestionsComponent implements OnInit {
   @ViewChild('slides', { static: true }) slides: IonSlides;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private questionnaireService: QuestionnaireService) {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   nextQuestion(): void {
     this.slides.isEnd().then(value => {
@@ -25,6 +28,11 @@ export class QuestionsComponent implements OnInit {
   }
 
   completeQuestionnaire(): void {
+    this.questionnaireService.setComplete();
     this.router.navigateByUrl('/results');
+  }
+
+  setRiskGroup(event): void {
+    this.questionnaireService.setRiskGroup(event.detail.value);
   }
 }

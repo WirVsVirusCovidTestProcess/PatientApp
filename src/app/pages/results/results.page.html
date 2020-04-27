@@ -20,6 +20,7 @@
         <ion-col class="ion-text-center">
           <p>{{ "results.text" | translate }}</p>
           <p>{{ "results.text2" | translate }}</p>
+          <p><b>Risk Group: {{ this.getRiskGroup() | async }}</b></p>
           <p>{{ "results.text3" | translate }}</p>
         </ion-col>
       </ion-row>

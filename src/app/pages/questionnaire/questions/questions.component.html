@@ -30,6 +30,26 @@
         <ion-slide>
             <div>
                 <h2>Question 3</h2>
+                <ion-radio-group (ionChange)="this.setRiskGroup($event)">
+                    <ion-list-header>
+                        <ion-label>Risk Group?</ion-label>
+                    </ion-list-header>
+
+                    <ion-item>
+                        <ion-label>Low</ion-label>
+                        <ion-radio slot="start" value="low"></ion-radio>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>Medium</ion-label>
+                        <ion-radio slot="start" value="medium"></ion-radio>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>High</ion-label>
+                        <ion-radio slot="start" value="high"></ion-radio>
+                    </ion-item>
+                </ion-radio-group>
                 <ion-button fill="outline" size="large" color="success" (click)="this.nextQuestion()">
                     {{ "questionnaire.questions.complete" | translate }}
                 </ion-button>
