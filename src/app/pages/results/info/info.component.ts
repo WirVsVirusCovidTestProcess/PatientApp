@@ -8,7 +8,7 @@ import { QuestionnaireService } from '../../../services/questionnaire.service';
   styleUrls: ['./info.component.scss'],
 })
 export class InfoComponent implements OnInit {
-  private infoParts = [{
+  infoParts = [{
     imageUrl: 'assets/img/undraw_wash_hands_nwl2.svg',
     title: 'results.info.1.title',
     texts: ['results.info.1.text1', 'results.info.1.text2']

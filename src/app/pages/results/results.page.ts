@@ -11,7 +11,7 @@ import { delay, filter } from 'rxjs/operators';
   styleUrls: ['./results.page.scss'],
 })
 export class ResultsPage implements OnInit {
-  private riskGroup: Observable<RiskGroup>;
+  riskGroup: Observable<RiskGroup>;
 
   constructor(private router: Router, private questionnaireService: QuestionnaireService) { }
 
