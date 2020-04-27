@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import { MenuController, Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { SettingsService } from './services/settings.service';
@@ -15,7 +15,8 @@ export class AppComponent implements OnInit {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private settingsService: SettingsService
+    private settingsService: SettingsService,
+    private menu: MenuController
   ) {
     this.initializeApp();
   }
@@ -28,5 +29,10 @@ export class AppComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  closeMenu(): void {
+    this.menu.close('sidebar-menu');
+  }
+
+  ngOnInit() {
+  }
 }
