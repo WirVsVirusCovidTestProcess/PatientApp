@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="434px" height="638px" viewBox="0 0 434 638" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="99.9816176%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="undraw_customer_survey_f9ur" transform="translate(20.000000, 20.000000)" fill-rule="nonzero">
+            <g id="Group" opacity="0.5" transform="translate(0.000000, 55.000000)" fill="url(#linearGradient-1)">
+                <rect id="Rectangle" x="0.5" y="0" width="393" height="543"></rect>
+            </g>
+            <rect id="Rectangle" fill="#FFFFFF" x="5.5" y="59" width="383" height="531"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-2)" x="102.5" y="44.98" width="190" height="46.02"></rect>
+            <path d="M197.5,0 C182.83,0 170.94,12.18 170.94,27.2 C170.94,42.22 182.83,54.4 197.5,54.4 C212.17,54.4 224.06,42.22 224.06,27.2 C224.06,12.18 212.17,0 197.5,0 Z M197.5,42.89 C191.119322,43.056792 185.273555,39.3416081 182.715333,33.4938412 C180.157111,27.6460743 181.396383,20.8313997 185.849605,16.2586875 C190.302826,11.6859754 197.082305,10.2667358 202.995746,12.6692552 C208.909186,15.0717746 212.77782,20.8171424 212.78,27.2 C212.880128,35.7469034 206.046559,42.7638345 197.5,42.89 Z" id="Shape" fill="url(#linearGradient-3)"></path>
+            <rect id="Rectangle" fill="#63AFB1" x="104.5" y="45" width="186" height="44"></rect>
+            <path d="M197.5,2 C183.140597,2 171.5,13.6405965 171.5,28 C171.5,42.3594035 183.140597,54 197.5,54 C211.859403,54 223.5,42.3594035 223.5,28 C223.5,21.1043713 220.760722,14.4911695 215.884776,9.61522369 C211.00883,4.73927785 204.395629,2 197.5,2 L197.5,2 Z M197.5,43 C189.215729,43 182.5,36.2842712 182.5,28 C182.5,19.7157288 189.215729,13 197.5,13 C205.784271,13 212.5,19.7157288 212.5,28 C212.5,36.2842712 205.784271,43 197.5,43 Z" id="Shape" fill="#63AFB1"></path>
+            <rect id="Rectangle" fill-opacity="0.25" fill="#808080" x="23.5" y="145" width="82" height="82"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-4)" x="23.78" y="307.5" width="82" height="82"></rect>
+            <rect id="Rectangle" fill="url(#linearGradient-4)" x="24.06" y="468" width="82" height="82"></rect>
+            <rect id="Rectangle" fill="#63AFB1" x="26.5" y="309" width="76" height="76"></rect>
+            <rect id="Rectangle" fill="#63AFB1" x="26.5" y="470" width="76" height="76"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="171.46" width="104.17" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="182.37" width="172" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="193.27" width="159.89" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="332.46" width="104.17" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="343.37" width="172" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="354.27" width="159.89" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="493.46" width="104.17" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="504.37" width="172" height="7.27"></rect>
+            <rect id="Rectangle" fill="#E0E0E0" x="152.5" y="515.27" width="159.89" height="7.27"></rect>
+            <polygon id="Path" fill="#FFFFFF" points="49.5 344 61.5 355 78.5 330 84.5 335 61.5 365 44.5 346"></polygon>
+            <polygon id="Path" fill="#FFFFFF" points="49.5 506 61.5 517 78.5 492 84.5 497 61.5 527 44.5 508"></polygon>
+        </g>
+    </g>
+</svg>

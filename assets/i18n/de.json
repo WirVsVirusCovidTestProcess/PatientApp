@@ -29,7 +29,9 @@
   "landingpage": {
     "title": "Health 19",
     "text": "Dies ist die Landingpage",
-    "start_questionnaire": "Fragebogen Starten"
+    "start_questionnaire": "Fragebogen Starten",
+    "a_project_of": "Ein Projekt des",
+    "supported_by": "Unterstützt von"
   },
   "questionnaire": {
     "title": "Fragebogen",
