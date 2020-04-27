@@ -14,12 +14,12 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content class="ion-padding">
+  <div class="ion-padding">
     <div [ngSwitch]="this.riskGroup | async">
       <app-results-low-risk-group *ngSwitchCase="'low'"></app-results-low-risk-group>
       <app-results-medium-risk-group *ngSwitchCase="'medium'"></app-results-medium-risk-group>
       <app-results-high-risk-group *ngSwitchCase="'high'"></app-results-high-risk-group>
       <app-results-loading-risk-group *ngSwitchDefault></app-results-loading-risk-group>
     </div>
-  </ion-content>
+  </div>
 </ion-content>
