@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { SettingsService } from '../../services/settings.service';
-import { Observable, combineLatest } from 'rxjs';
-import { AlertController } from '@ionic/angular';
+import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { Storage } from '@ionic/storage';
 import { availableLanguages, Language } from '../../types/languages';
-import { TranslateService } from '@ngx-translate/core';
+import { ConfirmationService } from '../../services/confirmation.service';
 
 @Component({
   selector: 'app-settings',
@@ -19,10 +18,9 @@ export class SettingsPage implements OnInit {
 
   constructor(
     private settingsService: SettingsService,
-    private alertController: AlertController,
     private storage: Storage,
     private router: Router,
-    private translateService: TranslateService
+    private confirmationService: ConfirmationService
   ) {
   }
 
@@ -40,35 +38,19 @@ export class SettingsPage implements OnInit {
   }
 
   async clearData() {
-    await combineLatest([
-      this.translateService.get('settings.delete_data_confirmation.title'),
-      this.translateService.get('settings.delete_data_confirmation.text'),
-      this.translateService.get('settings.delete_data_confirmation.cancel'),
-      this.translateService.get('settings.delete_data_confirmation.confirm')
-    ]).subscribe(async ([title, text, cancel, confirm]) => {
-      const alert = await this.alertController.create({
-        header: title,
-        message: text,
-        buttons: [{
-          text: cancel,
-          role: 'cancel',
-          cssClass: 'alert-medium',
-          handler: () => {
-          }
-        }, {
-          text: confirm,
-          cssClass: 'alert-danger',
-          handler: () => {
-            this.storage.clear().then(() => {
-              this.router.navigateByUrl('/').then(() => {
-                window.location.reload();
-              });
-            });
-          }
-        }]
-      });
-
-      await alert.present();
+    await this.confirmationService.showAlert({
+      title: 'settings.delete_data_confirmation.title',
+      text: 'settings.delete_data_confirmation.text',
+      cancelText: 'settings.delete_data_confirmation.cancel',
+      confirmText: 'settings.delete_data_confirmation.confirm',
+      cancelHandler: () => {},
+      confirmHandler: () => {
+        this.storage.clear().then(() => {
+          this.router.navigateByUrl('/').then(() => {
+            window.location.reload();
+          });
+        });
+      }
     });
   }
 }
