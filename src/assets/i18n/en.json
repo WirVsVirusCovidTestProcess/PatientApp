@@ -140,12 +140,16 @@
           "city": "City",
           "country": "Country"
         },
-        "contact": "Cotnact Data",
+        "contact": "Contact Data",
         "email": "E-Mail Address",
         "phone_number": "Phone Number",
         "other": "Further Information",
         "occupation": "Occupation"
       }
+    },
+    "status": {
+      "processing": "Test is being analyzed",
+      "positive": "Tested Positive"
     }
   }
 }

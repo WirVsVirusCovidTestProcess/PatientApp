@@ -146,6 +146,10 @@
         "other": "Weitere Informationen",
         "occupation": "Beruf"
       }
+    },
+    "status": {
+      "processing": "Test wird analysiert",
+      "positive": "Positiv getestet"
     }
   }
 }

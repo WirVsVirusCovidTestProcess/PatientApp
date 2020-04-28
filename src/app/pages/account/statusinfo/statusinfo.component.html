@@ -1,0 +1,10 @@
+<div class="ion-justify-content-center ion-align-items-center">
+  <ion-card class="result" [color]="(result | async)?.color">
+    <ion-card-header>
+      <ion-card-title>
+        <ion-text *ngIf="(result | async) as result"><ion-icon [name]="result.icon"></ion-icon> {{ "account.status." + (result .value) | translate }}</ion-text>
+        <ion-skeleton-text *ngIf="!(result | async)"></ion-skeleton-text>
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</div>
