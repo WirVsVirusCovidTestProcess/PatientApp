@@ -106,7 +106,33 @@
     "signup": {
       "title": "Registrierung",
       "text": "Registrierungs-Formular kommt hierhin",
-      "button": "Registrieren"
+      "button": "Registrieren",
+      "form": {
+        "title": "Persönliche Daten",
+        "first_name": "Vorname",
+        "last_name": "Nachname",
+        "gender": "Geschlecht",
+        "genders": {
+          "male": "Männlich",
+          "female": "Weiblich",
+          "diverse": "Divers"
+        },
+        "date_of_birth": "Geburtsdatum",
+        "nationality": "Nationalität",
+        "address": {
+          "title": "Adresse",
+          "street": "Straße",
+          "house_number": "Hausnummer",
+          "zip": "Postleitzahl",
+          "city": "Stadt/Ort",
+          "country": "Land"
+        },
+        "contact": "Kontaktdaten",
+        "email": "E-Mail Adresse",
+        "phone_number": "Telefonnummer",
+        "other": "Weitere Informationen",
+        "occupation": "Beruf"
+      }
     }
   }
 }

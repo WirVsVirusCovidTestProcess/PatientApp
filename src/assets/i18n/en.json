@@ -106,7 +106,33 @@
     "signup": {
       "title": "Sign up",
       "text": "The Sign up form belongs on this page",
-      "button": "Sign up"
+      "button": "Sign up",
+      "form": {
+        "title": "Personal Data",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "gender": "Gender",
+        "genders": {
+          "male": "Male",
+          "female": "Female",
+          "diverse": "Diverse"
+        },
+        "date_of_birth": "Date of Birth",
+        "nationality": "Nationality",
+        "address": {
+          "title": "Address",
+          "street": "Street",
+          "house_number": "Street Number",
+          "zip": "Zip Code",
+          "city": "City",
+          "country": "Country"
+        },
+        "contact": "Cotnact Data",
+        "email": "E-Mail Address",
+        "phone_number": "Phone Number",
+        "other": "Further Information",
+        "occupation": "Occupation"
+      }
     }
   }
 }

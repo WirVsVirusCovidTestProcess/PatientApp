@@ -12,6 +12,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import * as hydrated from './hydrated';
 import * as Settings from './settings/settings.module';
 import * as Questions from './questions/questions.module';
+import * as User from './user/user.module';
 
 
 export interface State {
@@ -23,7 +24,7 @@ export const reducers: ActionReducerMap<State> = {
 };
 
 export const storageSyncReducer = storageSync({
-  keys: [Settings.featureKey, Questions.featureKey],
+  keys: [Settings.featureKey, Questions.featureKey, User.featureKey],
   onSyncError: (err) => console.error(err)
 });
 
@@ -49,7 +50,8 @@ export const metaReducers: MetaReducer<State>[] = !environment.production ? [sto
       logOnly: environment.production // Restrict extension to log-only mode
     }),
     Settings.SettingsStateModule,
-    Questions.QuestionsStateModule
+    Questions.QuestionsStateModule,
+    User.UserStateModule
   ]
 })
 export class RootStoreModule {
