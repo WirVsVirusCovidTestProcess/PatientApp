@@ -19,7 +19,8 @@ const userReducer = createReducer(initialState,
       ...state,
       user
     };
-  })
+  }),
+  on(UserActions.clearState, () => initialState)
 );
 
 export function reducer(state: State | undefined, action: Action) {

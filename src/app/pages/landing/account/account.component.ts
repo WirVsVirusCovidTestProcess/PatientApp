@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./account.component.scss'],
 })
 export class AccountComponent implements OnInit {
+  @Output() startOver = new EventEmitter();
 
   constructor(private router: Router) { }
 
@@ -14,5 +15,9 @@ export class AccountComponent implements OnInit {
 
   gotoAccount(): void {
     this.router.navigateByUrl('/account');
+  }
+
+  restart(): void {
+    this.startOver.emit();
   }
 }

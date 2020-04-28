@@ -24,8 +24,8 @@
         </ion-col>
       </ion-row>
       <app-landingpage-questionnaire *ngIf="!(hasAnsweredQuestionnaire | async)"></app-landingpage-questionnaire>
-      <app-landingpage-results *ngIf="(hasAnsweredQuestionnaire | async) && !(hasAccount | async)"></app-landingpage-results>
-      <app-landingpage-account *ngIf="(hasAnsweredQuestionnaire | async) && (hasAccount | async)"></app-landingpage-account>
+      <app-landingpage-results *ngIf="(hasAnsweredQuestionnaire | async) && !(hasAccount | async)" (startOver)="startOver()"></app-landingpage-results>
+      <app-landingpage-account *ngIf="(hasAnsweredQuestionnaire | async) && (hasAccount | async)" (startOver)="startOver()"></app-landingpage-account>
       <ion-row class="ion-margin-top">
         <ion-col class="program-column">
           <div>

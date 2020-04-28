@@ -1,6 +1,9 @@
 <ion-row class="ion-margin-vertical">
   <ion-col class="ion-text-center">
     <p>{{ "landingpage.questionnaire_exists" | translate }}</p>
-    <ion-button size="large" (click)="this.gotoResults()">{{ "landingpage.goto_results" | translate }}</ion-button>
+    <p><ion-button size="large" (click)="this.gotoResults()">{{ "landingpage.goto_results" | translate }}</ion-button></p>
+    <p>
+      <ion-button color="medium" (click)="this.restart()" fill="outline">{{ "landingpage.start_over" | translate }}</ion-button>
+    </p>
   </ion-col>
 </ion-row>

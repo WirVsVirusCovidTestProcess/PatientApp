@@ -37,7 +37,14 @@
     "questionnaire_exists": "You have already answered the Questionnaire",
     "goto_results": "View Results",
     "answer_questionnaire": "Answer the Questionnaire now",
-    "goto_questionnaire": "Start Questionnaire"
+    "goto_questionnaire": "Start Questionnaire",
+    "start_over": "Discard Data",
+    "start_over_confirmation": {
+      "title": "Discard Data?",
+      "text": "Are you sure you want to discard all your data?",
+      "cancel": "Cancel",
+      "confirm": "Discard Data"
+    }
   },
   "questionnaire": {
     "title": "Questionnaire",

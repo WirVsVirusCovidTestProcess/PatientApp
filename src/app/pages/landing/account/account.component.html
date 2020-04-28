@@ -1,6 +1,12 @@
 <ion-row class="ion-margin-vertical">
-  <ion-col class="ion-text-center">
-    <p>{{ "landingpage.account_exists" | translate }}</p>
-    <ion-button size="large" (click)="this.gotoAccount()">{{ "landingpage.goto_account" | translate }}</ion-button>
-  </ion-col>
+    <ion-col class="ion-text-center">
+        <p>{{ "landingpage.account_exists" | translate }}</p>
+        <p>
+            <ion-button size="large"
+                        (click)="this.gotoAccount()">{{ "landingpage.goto_account" | translate }}</ion-button>
+        </p>
+        <p>
+            <ion-button color="medium" (click)="this.restart()" fill="outline">{{ "landingpage.start_over" | translate }}</ion-button>
+        </p>
+    </ion-col>
 </ion-row>

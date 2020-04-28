@@ -37,7 +37,14 @@
     "questionnaire_exists": "Sie haben den Fragebogen bereits beantworten",
     "goto_results": "Ergebnisse ansehen",
     "answer_questionnaire": "Beantworten Sie jetzt den Fragebogen",
-    "goto_questionnaire": "Zum Fragebogen"
+    "goto_questionnaire": "Zum Fragebogen",
+    "start_over": "Daten verwerfen",
+    "start_over_confirmation": {
+      "title": "Daten verwerfen?",
+      "text": "Sind Sie sicher, dass Sie alle Ihre Daten verwerfen wollen?",
+      "cancel": "Abbrechen",
+      "confirm": "Daten verwerfen"
+    }
   },
   "questionnaire": {
     "title": "Fragebogen",

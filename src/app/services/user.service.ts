@@ -25,4 +25,8 @@ export class UserService {
   public setUser(user: User): void {
     this.store.dispatch(UserActions.setUser({ user }));
   }
+
+  public clearData(): void {
+
+  }
 }
