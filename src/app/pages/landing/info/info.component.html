@@ -1,0 +1,23 @@
+<ion-row class="ion-justify-content-center ion-margin-vertical">
+    <ion-col>
+        <ion-grid>
+            <ion-row class="info-row" *ngFor="let info of this.infoParts; let i = index">
+                <ion-col size="12" size-md="4" [pushMd]="i % 2 == 0 ? 8 : undefined" class="image-column">
+                    <ion-thumbnail class="image">
+                        <ion-img [src]="info.imageUrl"></ion-img>
+                    </ion-thumbnail>
+                </ion-col>
+                <ion-col size="12" size-md="8" [pullMd]="i % 2 == 0 ? 4 : undefined"
+                         class="text-column ion-text-center ion-text-md-start">
+                    <h3>{{ info.title | translate }}</h3>
+                    <div>
+                        <p *ngFor="let text of info.texts">{{ text | translate }}</p>
+                    </div>
+                    <ion-button *ngIf="info.button" color="medium" fill="outline"
+                                (click)="info.button.handler()">{{ info.button.text | translate }}</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-col>
+</ion-row>
+

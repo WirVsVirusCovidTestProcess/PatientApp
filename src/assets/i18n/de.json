@@ -44,6 +44,31 @@
       "text": "Sind Sie sicher, dass Sie alle Ihre Daten verwerfen wollen?",
       "cancel": "Abbrechen",
       "confirm": "Daten verwerfen"
+    },
+    "info": {
+      "anamnese": {
+        "title": "Digitale Anamnese",
+        "text1": "Die Health 19 App beinhaltet einen digitalen Fragebogen zur Ersteinschätzung von Symptomen von Covid-19",
+        "text2": "Der Fragebogen basiert auf einem Fragenkatalog der Charité Berlin"
+      },
+      "assessment": {
+        "title": "Einschätzung Ihres Risikos",
+        "text1": "Am Ende des Fragebogens erhalten Sie eine Zusammenfassung Ihrer Antworten",
+        "text2": "Dabei bekommen Sie auch eine Risikoeinschätzung ob Sie infiziert sein könnten mitgeteilt"
+      },
+      "recommendations": {
+        "title": "Handlungsempfehlungen",
+        "text1": "Erhalten Sie auf Sie zugeschnittene Handlungsempfehlungen"
+      },
+      "connect": {
+        "title": "Ansprechpartner",
+        "text1": "Wir zeigen Ihnen geeignete Ansprechpartner und vermitteln Sie zu den für Sie zuständigen Stellen"
+      },
+      "progress": {
+        "title": "Test-Ergebnis einsehen",
+        "text1": "Sehen Sie ihr Test-Ergebnis ein, sobald es verfügbar ist",
+        "text2": "Auf Wunsch können Sie auch automatisiert benachrichtigt werden, damit Sie es keinesfalls verpasen"
+      }
     }
   },
   "questionnaire": {

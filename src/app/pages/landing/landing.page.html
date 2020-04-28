@@ -19,13 +19,19 @@
       <ion-row class="ion-justify-content-center">
         <ion-col class="ion-text-center ion-justify-content-center centered-column">
           <ion-img class="image ion-margin-bottom" src="assets/img/illustrations/undraw_doctors_hwty.svg"></ion-img>
-          <h1>{{ "landingpage.title" | translate }}</h1>
-          <p>{{ "landingpage.text" | translate }}</p>
+          <h1 class="main-title">{{ "landingpage.title" | translate }}</h1>
         </ion-col>
       </ion-row>
       <app-landingpage-questionnaire *ngIf="!(hasAnsweredQuestionnaire | async)"></app-landingpage-questionnaire>
       <app-landingpage-results *ngIf="(hasAnsweredQuestionnaire | async) && !(hasAccount | async)" (startOver)="startOver()"></app-landingpage-results>
       <app-landingpage-account *ngIf="(hasAnsweredQuestionnaire | async) && (hasAccount | async)" (startOver)="startOver()"></app-landingpage-account>
+
+      <app-landingpage-info></app-landingpage-info>
+
+      <app-landingpage-questionnaire *ngIf="!(hasAnsweredQuestionnaire | async)"></app-landingpage-questionnaire>
+      <app-landingpage-results *ngIf="(hasAnsweredQuestionnaire | async) && !(hasAccount | async)" (startOver)="startOver()"></app-landingpage-results>
+      <app-landingpage-account *ngIf="(hasAnsweredQuestionnaire | async) && (hasAccount | async)" (startOver)="startOver()"></app-landingpage-account>
+
       <ion-row class="ion-margin-top">
         <ion-col class="program-column">
           <div>

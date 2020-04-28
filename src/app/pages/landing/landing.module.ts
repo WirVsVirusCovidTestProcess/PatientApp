@@ -9,6 +9,7 @@ import { SharedModule } from '../../shared.module';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { AccountComponent } from './account/account.component';
 import { ResultsComponent } from './results/results.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { ResultsComponent } from './results/results.component';
     IonicModule,
     LandingPageRoutingModule
   ],
-  declarations: [LandingPage, QuestionnaireComponent, AccountComponent, ResultsComponent]
+  declarations: [LandingPage, QuestionnaireComponent, AccountComponent, ResultsComponent, InfoComponent]
 })
 export class LandingPageModule {}

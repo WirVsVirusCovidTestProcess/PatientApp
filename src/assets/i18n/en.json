@@ -44,6 +44,31 @@
       "text": "Are you sure you want to discard all your data?",
       "cancel": "Cancel",
       "confirm": "Discard Data"
+    },
+    "info": {
+      "anamnese": {
+        "title": "Digital Anamnesis",
+        "text1": "The Health 19 App includes a digital Questionnaire to evaluate Covid-19 Symptoms",
+        "text2": "The Questionnaire is based on a list of questions of the Charité Berlin"
+      },
+      "assessment": {
+        "title": "Risk Assessment",
+        "text1": "At the end of the Questionnaire you will get a summary of your answers",
+        "text2": "You also receive an assessment of your infection risk"
+      },
+      "recommendations": {
+        "title": "Recommendations",
+        "text1": "Get personalized recommendations of action"
+      },
+      "connect": {
+        "title": "Contact",
+        "text1": "We show you relevant contact persons and redirect you to the offices responsible for you"
+      },
+      "progress": {
+        "title": "Show Test Result",
+        "text1": "Get your Test Result as soon as it is available",
+        "text2": "You can also get notified automatically to not miss it"
+      }
     }
   },
   "questionnaire": {
