@@ -31,7 +31,20 @@
     "text": "This is the landing page",
     "start_questionnaire": "Start Questionnaire",
     "a_project_of": "A Project of",
-    "supported_by": "Supported by"
+    "supported_by": "Supported by",
+    "account_exists": "There already exists an Account",
+    "goto_account": "Go to Dashboard",
+    "questionnaire_exists": "You have already answered the Questionnaire",
+    "goto_results": "View Results",
+    "answer_questionnaire": "Answer the Questionnaire now",
+    "goto_questionnaire": "Start Questionnaire",
+    "start_over": "Discard Data",
+    "start_over_confirmation": {
+      "title": "Discard Data?",
+      "text": "Are you sure you want to discard all your data?",
+      "cancel": "Cancel",
+      "confirm": "Discard Data"
+    }
   },
   "questionnaire": {
     "title": "Questionnaire",
@@ -127,12 +140,16 @@
           "city": "City",
           "country": "Country"
         },
-        "contact": "Cotnact Data",
+        "contact": "Contact Data",
         "email": "E-Mail Address",
         "phone_number": "Phone Number",
         "other": "Further Information",
         "occupation": "Occupation"
       }
+    },
+    "status": {
+      "processing": "Test is being analyzed",
+      "positive": "Tested Positive"
     }
   }
 }

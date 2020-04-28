@@ -31,7 +31,20 @@
     "text": "Dies ist die Landingpage",
     "start_questionnaire": "Fragebogen Starten",
     "a_project_of": "Ein Projekt des",
-    "supported_by": "Unterstützt von"
+    "supported_by": "Unterstützt von",
+    "account_exists": "Es besteht bereits ein Account",
+    "goto_account": "Zum Dashboard",
+    "questionnaire_exists": "Sie haben den Fragebogen bereits beantworten",
+    "goto_results": "Ergebnisse ansehen",
+    "answer_questionnaire": "Beantworten Sie jetzt den Fragebogen",
+    "goto_questionnaire": "Zum Fragebogen",
+    "start_over": "Daten verwerfen",
+    "start_over_confirmation": {
+      "title": "Daten verwerfen?",
+      "text": "Sind Sie sicher, dass Sie alle Ihre Daten verwerfen wollen?",
+      "cancel": "Abbrechen",
+      "confirm": "Daten verwerfen"
+    }
   },
   "questionnaire": {
     "title": "Fragebogen",
@@ -133,6 +146,10 @@
         "other": "Weitere Informationen",
         "occupation": "Beruf"
       }
+    },
+    "status": {
+      "processing": "Test wird analysiert",
+      "positive": "Positiv getestet"
     }
   }
 }
