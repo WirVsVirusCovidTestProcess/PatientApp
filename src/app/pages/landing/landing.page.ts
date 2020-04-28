@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { QuestionnaireService } from '../../services/questionnaire.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-landing',
@@ -7,13 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing.page.scss'],
 })
 export class LandingPage implements OnInit {
+  hasAnsweredQuestionnaire: Observable<boolean>;
+  hasAccount: Observable<boolean>;
 
-  constructor(private router: Router) { }
+  constructor(private questionnaireService: QuestionnaireService, private userService: UserService) { }
 
   ngOnInit() {
-  }
-
-  startQuestionnaire(): void {
-    this.router.navigateByUrl('/questionnaire');
+    this.hasAnsweredQuestionnaire = this.questionnaireService.getComplete();
+    this.hasAccount = this.userService.hasUser();
   }
 }

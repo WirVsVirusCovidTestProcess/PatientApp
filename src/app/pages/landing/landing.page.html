@@ -19,14 +19,13 @@
       <ion-row class="ion-justify-content-center">
         <ion-col class="ion-text-center ion-justify-content-center centered-column">
           <ion-img class="image ion-margin-bottom" src="assets/img/illustrations/undraw_doctors_hwty.svg"></ion-img>
-          <ion-text>{{ "landingpage.text" | translate }}</ion-text>
+          <h1>{{ "landingpage.title" | translate }}</h1>
+          <p>{{ "landingpage.text" | translate }}</p>
         </ion-col>
       </ion-row>
-      <ion-row class="ion-margin-vertical">
-        <ion-col class="ion-text-center">
-          <ion-button size="large" (click)="this.startQuestionnaire()">{{ "landingpage.start_questionnaire" | translate }}</ion-button>
-        </ion-col>
-      </ion-row>
+      <app-landingpage-questionnaire *ngIf="!(hasAnsweredQuestionnaire | async)"></app-landingpage-questionnaire>
+      <app-landingpage-results *ngIf="(hasAnsweredQuestionnaire | async) && !(hasAccount | async)"></app-landingpage-results>
+      <app-landingpage-account *ngIf="(hasAnsweredQuestionnaire | async) && (hasAccount | async)"></app-landingpage-account>
       <ion-row class="ion-margin-top">
         <ion-col class="program-column">
           <div>

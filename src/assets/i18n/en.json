@@ -31,7 +31,13 @@
     "text": "This is the landing page",
     "start_questionnaire": "Start Questionnaire",
     "a_project_of": "A Project of",
-    "supported_by": "Supported by"
+    "supported_by": "Supported by",
+    "account_exists": "There already exists an Account",
+    "goto_account": "Go to Dashboard",
+    "questionnaire_exists": "You have already answered the Questionnaire",
+    "goto_results": "View Results",
+    "answer_questionnaire": "Answer the Questionnaire now",
+    "goto_questionnaire": "Start Questionnaire"
   },
   "questionnaire": {
     "title": "Questionnaire",

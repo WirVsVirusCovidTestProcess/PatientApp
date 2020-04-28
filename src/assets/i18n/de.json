@@ -31,7 +31,13 @@
     "text": "Dies ist die Landingpage",
     "start_questionnaire": "Fragebogen Starten",
     "a_project_of": "Ein Projekt des",
-    "supported_by": "Unterstützt von"
+    "supported_by": "Unterstützt von",
+    "account_exists": "Es besteht bereits ein Account",
+    "goto_account": "Zum Dashboard",
+    "questionnaire_exists": "Sie haben den Fragebogen bereits beantworten",
+    "goto_results": "Ergebnisse ansehen",
+    "answer_questionnaire": "Beantworten Sie jetzt den Fragebogen",
+    "goto_questionnaire": "Zum Fragebogen"
   },
   "questionnaire": {
     "title": "Fragebogen",
