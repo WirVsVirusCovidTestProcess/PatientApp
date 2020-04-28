@@ -30,9 +30,6 @@ export class SettingsService {
     }
     this.translateService.setDefaultLang(availableLanguages[0]);
 
-    // tslint:disable-next-line
-    window.matchMedia('(prefers-color-scheme: dark)').addListener( (e) => this.handleSystemColorSchemePreferenceChange(e));
-
     this.hydrated = this.store.select(Hydrated.selectHydrated).pipe(filter(val => !!val), first());
     this.hydrated.subscribe(() => {
       this.initializeDarkMode();
@@ -50,10 +47,6 @@ export class SettingsService {
     this.getLanguage().pipe(first()).subscribe((val) => {
       this.setLanguage(val !== undefined ? val : availableLanguages[0]);
     });
-  }
-
-  private handleSystemColorSchemePreferenceChange(mediaList): void {
-    this.setDarkMode(mediaList.matches);
   }
 
   public getDarkMode(): Observable<boolean | undefined> {
