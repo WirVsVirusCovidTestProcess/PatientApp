@@ -15,4 +15,7 @@ export class QuestionnaireComponent implements OnInit {
   gotoQuestionnaire(): void {
     this.router.navigateByUrl('/questionnaire');
   }
+  gotoHotline(): void {
+    this.router.navigateByUrl('/questionnaire/hotline');
+  }
 }

@@ -38,6 +38,7 @@
     "goto_results": "View Results",
     "answer_questionnaire": "Answer the Questionnaire now",
     "goto_questionnaire": "Start Questionnaire",
+    "goto_hotline": "By Phone",
     "start_over": "Discard Data",
     "start_over_confirmation": {
       "title": "Discard Data?",
@@ -93,6 +94,17 @@
     "questions": {
       "continue": "Next Question",
       "complete": "Complete Questionnaire"
+    },
+    "hotline": {
+      "title": "Hotline",
+      "text": "Answer Questionnaire by Phone",
+      "already_answered": "You have already answered the Questionnaire by Phone?",
+      "enter_keywords": "Please enter your keywords to load your data",
+      "keywords": {
+        "first": "First Keyword",
+        "second": "Second Keyword"
+      },
+      "load_data": "Load Data & Show Result"
     }
   },
   "results": {

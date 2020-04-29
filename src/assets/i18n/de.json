@@ -38,6 +38,7 @@
     "goto_results": "Ergebnisse ansehen",
     "answer_questionnaire": "Beantworten Sie jetzt den Fragebogen",
     "goto_questionnaire": "Zum Fragebogen",
+    "goto_hotline": "Per Telefon",
     "start_over": "Daten verwerfen",
     "start_over_confirmation": {
       "title": "Daten verwerfen?",
@@ -93,6 +94,17 @@
     "questions": {
       "continue": "Nächste Frage",
       "complete": "Fragebogen abschließen"
+    },
+    "hotline": {
+      "title": "Hotline",
+      "text": "Fragebogen per Telefon beantworten",
+      "already_answered": "Sie haben den Fragebogen bereits per Telefon beantwortet?",
+      "enter_keywords": "Bitte geben Sie Ihre Schlüsselwörter ein, um die Daten zu laden",
+      "keywords": {
+        "first": "Erstes Schlüsselwort",
+        "second": "Zweites Schlüsselwort"
+      },
+      "load_data": "Daten laden & Ergebnis anzeigen"
     }
   },
   "results": {

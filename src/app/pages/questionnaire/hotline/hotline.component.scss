@@ -1,0 +1,23 @@
+.centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+.hotline {
+  font-size: 3em;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.input-form {
+  margin-top: 5vh;
+}
