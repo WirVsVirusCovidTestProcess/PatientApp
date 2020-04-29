@@ -29,6 +29,7 @@
   "landingpage": {
     "title": "Health 19",
     "text": "Dies ist die Landingpage",
+    "prototype_warning": "Dies ist ein Prototyp",
     "start_questionnaire": "Fragebogen Starten",
     "a_project_of": "Ein Projekt des",
     "supported_by": "Unterstützt von",
