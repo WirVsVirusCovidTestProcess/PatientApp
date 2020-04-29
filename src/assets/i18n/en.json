@@ -30,6 +30,7 @@
     "title": "Health 19",
     "text": "This is the landing page",
     "start_questionnaire": "Start Questionnaire",
+    "prototype_warning": "This is a Prototype",
     "a_project_of": "A Project of",
     "supported_by": "Supported by",
     "account_exists": "There already exists an Account",
