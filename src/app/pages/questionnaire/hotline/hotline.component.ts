@@ -34,6 +34,7 @@ export class HotlineComponent implements OnInit {
 
   loadData(): void {
     this.questionnaireService.setRiskGroup('high');
+    this.questionnaireService.setComplete();
     this.router.navigateByUrl('/results');
   }
 
