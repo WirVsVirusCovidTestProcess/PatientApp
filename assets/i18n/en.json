@@ -38,6 +38,7 @@
     "goto_results": "View Results",
     "answer_questionnaire": "Answer the Questionnaire now",
     "goto_questionnaire": "Start Questionnaire",
+    "goto_hotline": "By Phone",
     "start_over": "Discard Data",
     "start_over_confirmation": {
       "title": "Discard Data?",
@@ -76,16 +77,16 @@
     "text": "Here comes the questionnaire",
     "intro": {
       "1": {
-        "title": "Questionnaire Hint 1",
-        "text": "This is the first important hint"
+        "title": "The Questionnaire",
+        "text": "Answering the questionnaire approximately takes 5 minutes of your time and asks about acute symptoms, health conditions, travels in risky regions and contact to suspected cases. Please try to answer as accurately as possible."
       },
       "2": {
-        "title": "Questionnaire Hint 2",
-        "text": "This is the second important hint"
+        "title": "Your Data",
+        "text": "The questionnaire is anonymous and is only edited and saved on your device. Your answers will not be transmitted over the internet to us or others."
       },
-      "start": {
-        "title": "Start Questionnaire",
-        "text": "You can start the Questionnaire now"
+      "3": {
+        "title": "See a doctor when in doubt!",
+        "text": "The usage of this app does not replace treatment by a medical professional. If you feel critically ill, please seek medical help immediately. This application is not an application that provides diagnostic services. The application serves to simplify the procedures in care."
       },
       "continue": "Continue",
       "start_questionnaire": "Start Questionnaire now"
@@ -93,6 +94,17 @@
     "questions": {
       "continue": "Next Question",
       "complete": "Complete Questionnaire"
+    },
+    "hotline": {
+      "title": "Hotline",
+      "text": "Answer Questionnaire by Phone",
+      "already_answered": "You have already answered the Questionnaire by Phone?",
+      "enter_keywords": "Please enter your keywords to load your data",
+      "keywords": {
+        "first": "First Keyword",
+        "second": "Second Keyword"
+      },
+      "load_data": "Load Data & Show Result"
     }
   },
   "results": {
