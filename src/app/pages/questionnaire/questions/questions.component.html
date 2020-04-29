@@ -10,50 +10,64 @@
 <ion-content [fullscreen]="true">
     <ion-slides #slides>
         <ion-slide>
-            <div>
-                <h2>Question 1</h2>
-                <ion-button fill="clear" (click)="this.nextQuestion()">{{ "questionnaire.questions.continue" | translate }}
-                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
-                </ion-button>
-            </div>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Question 1</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-button fill="clear"
+                                (click)="this.nextQuestion()">{{ "questionnaire.questions.continue" | translate }}
+                        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                    </ion-button>
+                </ion-card-content>
+            </ion-card>
         </ion-slide>
 
         <ion-slide>
-            <div>
-                <h2>Question 2</h2>
-                <ion-button fill="clear" (click)="this.nextQuestion()">{{ "questionnaire.questions.continue" | translate }}
-                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
-                </ion-button>
-            </div>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Question 2</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-button fill="clear"
+                                (click)="this.nextQuestion()">{{ "questionnaire.questions.continue" | translate }}
+                        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                    </ion-button>
+                </ion-card-content>
+            </ion-card>
         </ion-slide>
 
         <ion-slide>
-            <div>
-                <h2>Question 3</h2>
-                <ion-radio-group (ionChange)="this.setRiskGroup($event)">
-                    <ion-list-header>
-                        <ion-label>Risk Group?</ion-label>
-                    </ion-list-header>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Question 3</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-radio-group (ionChange)="this.setRiskGroup($event)">
+                        <ion-list-header>
+                            <ion-label>Risk Group?</ion-label>
+                        </ion-list-header>
 
-                    <ion-item>
-                        <ion-label>Low</ion-label>
-                        <ion-radio slot="start" value="low"></ion-radio>
-                    </ion-item>
+                        <ion-item>
+                            <ion-label>Low</ion-label>
+                            <ion-radio slot="start" value="low"></ion-radio>
+                        </ion-item>
 
-                    <ion-item>
-                        <ion-label>Medium</ion-label>
-                        <ion-radio slot="start" value="medium"></ion-radio>
-                    </ion-item>
+                        <ion-item>
+                            <ion-label>Medium</ion-label>
+                            <ion-radio slot="start" value="medium"></ion-radio>
+                        </ion-item>
 
-                    <ion-item>
-                        <ion-label>High</ion-label>
-                        <ion-radio slot="start" value="high"></ion-radio>
-                    </ion-item>
-                </ion-radio-group>
-                <ion-button fill="outline" size="large" color="success" (click)="this.nextQuestion()">
-                    {{ "questionnaire.questions.complete" | translate }}
-                </ion-button>
-            </div>
+                        <ion-item>
+                            <ion-label>High</ion-label>
+                            <ion-radio slot="start" value="high"></ion-radio>
+                        </ion-item>
+                    </ion-radio-group>
+                    <ion-button fill="outline" size="large" color="success" (click)="this.nextQuestion()">
+                        {{ "questionnaire.questions.complete" | translate }}
+                    </ion-button>
+                </ion-card-content>
+            </ion-card>
         </ion-slide>
 
     </ion-slides>
