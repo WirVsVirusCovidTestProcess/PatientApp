@@ -33,3 +33,10 @@
 .alert-button.alert-danger {
   color: var(--ion-color-danger);
 }
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}

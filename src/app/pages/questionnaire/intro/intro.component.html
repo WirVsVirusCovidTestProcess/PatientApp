@@ -8,36 +8,33 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-slides #slides>
-        <ion-slide>
-            <div>
-                <h2>{{ "questionnaire.intro.1.title" | translate }}</h2>
-                <p>{{ "questionnaire.intro.1.text" | translate }}</p>
-                <ion-button fill="clear" (click)="this.nextSlide()">{{ "questionnaire.intro.continue" | translate }}
-                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
-                </ion-button>
-            </div>
-        </ion-slide>
 
-        <ion-slide>
-            <div>
-                <h2>{{ "questionnaire.intro.2.title" | translate }}</h2>
-                <p>{{ "questionnaire.intro.2.text" | translate }}</p>
-                <ion-button fill="clear" (click)="this.nextSlide()">{{ "questionnaire.intro.continue" | translate }}
-                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
-                </ion-button>
-            </div>
+    <ion-slides #slides pager="true">
+        <ion-slide *ngFor="let hint of hints; let i = index">
+            <ion-grid fixed>
+                <ion-row class="ion-justify-content-center ion-align-items-stretch">
+                    <ion-col size="12" size-lg="6" size-xl="4" size-md="8">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>
+                                    {{ hint.title | translate }}
+                                </ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <p>{{ hint.text | translate }}</p>
+                                <ion-button *ngIf="i < (hints.length - 1)" fill="clear" (click)="this.nextSlide()">
+                                    {{ "questionnaire.intro.continue" | translate }}
+                                    <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                                </ion-button>
+                                <ion-button *ngIf="i >= (hints.length - 1)" fill="outline" size="large"
+                                            (click)="this.startQuestionnaire()">
+                                    {{ "questionnaire.intro.start_questionnaire" | translate }}
+                                </ion-button>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
         </ion-slide>
-
-        <ion-slide>
-            <div>
-                <h2>{{ "questionnaire.intro.start.title" | translate }}</h2>
-                <p>{{ "questionnaire.intro.start.text" | translate }}</p>
-                <ion-button fill="outline" size="large" (click)="this.startQuestionnaire()">
-                    {{ "questionnaire.intro.start_questionnaire" | translate }}
-                </ion-button>
-            </div>
-        </ion-slide>
-
     </ion-slides>
 </ion-content>

@@ -76,16 +76,16 @@
     "text": "Dies ist der Fragebogen",
     "intro": {
       "1": {
-        "title": "Fragebogen Hinweis 1",
-        "text": "Dies ist der erste wichtige Hinweis"
+        "title": "Der Fragebogen",
+        "text": "Der Fragebogen nimmt ca. 5 Minuten Ihrer Zeit in Anspruch und stellt Ihnen Fragen zu aktuellen Symptomen, Vorerkrankungen, Reisen in Risikogebiete und Kontakt zu Verdachtsfällen. Versuchen Sie, die Fragen so genau wie möglich zu beantworten."
       },
       "2": {
-        "title": "Fragebogen Hinweis 2",
-        "text": "Dies ist der zweite wichtige Hinweis"
+        "title": "Ihre Daten",
+        "text": "Der Fragebogen ist anonym und wird nur auf Ihrem Endgerät bearbeitet und gespeichert. Ihre Antworten werden nicht an uns oder über das Internet an Dritte übertragen."
       },
-      "start": {
-        "title": "Fragebogen Starten",
-        "text": "Starten Sie jetzt den Fragebogen"
+      "3": {
+        "title": "Im Zweifel zum Arzt!",
+        "text": "Die Nutzung dieser App ersetzt keine ärztliche Behandlung. Wenn Sie sich aktuell schwer krank fühlen, suchen Sie bitte umgehend medizinische Hilfe auf. Bei der digitalen Anwendung handelt es sich nicht um eine Anwendung, die diagnostische Leistungen erbringt. Die Anwendung dient der Vereinfachung der Handlungsabläufe in der Versorgung."
       },
       "continue": "Weiter",
       "start_questionnaire": "Fragebogen jetzt starten"

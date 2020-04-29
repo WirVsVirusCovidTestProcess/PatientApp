@@ -10,6 +10,17 @@ import { Router } from '@angular/router';
 export class IntroComponent implements OnInit {
   @ViewChild('slides', { static: true }) slides: IonSlides;
 
+  hints = [{
+    title: 'questionnaire.intro.1.title',
+    text: 'questionnaire.intro.1.text'
+  }, {
+    title: 'questionnaire.intro.2.title',
+    text: 'questionnaire.intro.2.text'
+  }, {
+    title: 'questionnaire.intro.3.title',
+    text: 'questionnaire.intro.3.text'
+  }];
+
   constructor(private router: Router) { }
 
   ngOnInit() {}
