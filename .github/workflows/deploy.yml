@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  GITHUB_PAGES_URL: 'https://wirvsviruscovidtestprocess.github.io/PatientApp/'
+  GITHUB_PAGES_URL: 'https://health19.de'
 
 jobs:
   build-and-deploy:
